@@ -1,2 +1,5 @@
-# cours-1
-Premier cours, mardi matin
+# Introductions a numpy, pytorch, scikit-learn
+
+Premier block de cours 
+
+
