@@ -1,0 +1,2 @@
+diagA = A.ravel()[::A.shape[1] + 1]
+diagA
