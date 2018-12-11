@@ -1,0 +1,1 @@
+intercept_regressor = np.ones_like(x)

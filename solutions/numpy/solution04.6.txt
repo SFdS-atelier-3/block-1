@@ -1,0 +1,3 @@
+cm[~rmask] = 0
+plt.imshow(cm, cmap='gray')
+plt.axis('off')

@@ -1,0 +1,3 @@
+stack_first = np.concatenate([s1[np.newaxis], s2[np.newaxis]], axis=0)
+stack_last = np.concatenate([s1[..., np.newaxis], s2[..., np.newaxis]], axis=-1)
+stack_first.shape, stack_last.shape

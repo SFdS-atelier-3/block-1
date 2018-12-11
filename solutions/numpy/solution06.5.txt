@@ -1,0 +1,3 @@
+Xpinv2 = np.linalg.pinv(X)
+np.abs(Xpinv2 - Xpinv).sum()
+

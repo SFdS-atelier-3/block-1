@@ -1,0 +1,1 @@
+Xpinv = np.linalg.inv(X.T.dot(X)).dot(X.T)

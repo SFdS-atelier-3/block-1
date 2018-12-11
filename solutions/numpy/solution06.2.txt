@@ -1,0 +1,2 @@
+X = np.stack((x, intercept_regressor), axis=1)
+X.shape

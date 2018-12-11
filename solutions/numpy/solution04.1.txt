@@ -1,0 +1,2 @@
+cm = camera().copy()
+plt.imshow(cm, cmap='gray')
