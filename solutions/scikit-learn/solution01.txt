@@ -1,0 +1,1 @@
+gsc_scores = cross_val_score(gsc, X, y, cv=cv, scoring="neg_mean_absolute_error", n_jobs=3)

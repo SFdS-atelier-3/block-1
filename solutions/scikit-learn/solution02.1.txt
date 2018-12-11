@@ -1,0 +1,1 @@
+my_nn = MyNeuralNetwork(layer_sizes=(100,), n_epochs=100)
