@@ -1,6 +1,6 @@
 # Introductions a numpy, pytorch, scikit-learn
 
-Premier block de cours ([Slides d'organisation sont ici](https://docs.google.com/presentation/d/1zAZ00k5YAwcSc-OVetbeqPYjXZMOVjU_cs-rQBnxFH0/edit?usp=sharing))
+Premier block de cours ([Slides d'organisation sont ici](https://docs.google.com/presentation/d/1zAZ00k5YAwcSc-OVetbeqPYjXZMOVjU_cs-rQBnxFH0/edit?usp=sharing), [Le bloc notes est ici](https://docs.google.com/document/d/1EHoy_CwYGPpQt-MmlbjXfAu7UIsulZmWAfn2HkCmWlo/edit?usp=sharing))
 
 ## Instructions:
 
