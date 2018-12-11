@@ -1,0 +1,5 @@
+coulomb_matrices = coulomb_energies.copy()
+
+coulomb_matrices.reshape(coulomb_matrices.shape[0], -1)[:, ::coulomb_matrices.shape[1] + 1] = qm7['charges'] ** 2.4
+
+plt.matshow(coulomb_matrices[50])

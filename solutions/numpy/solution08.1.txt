@@ -1,0 +1,2 @@
+n, p = 10, 2
+points = np.random.randn(n, p)

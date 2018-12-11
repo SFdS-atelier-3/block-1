@@ -1,0 +1,13 @@
+sums = labels_onehot.T.dot(X)
+
+sums2 = np.zeros((len(u_labels), X.shape[1]))
+l_ulabels = list(u_labels)
+
+for label, row in zip(labels, X):
+    index = l_ulabels.index(label)
+
+    sums2[index] += row
+
+sums2 = np.array(sums2)
+
+np.abs(sums - sums2).sum()

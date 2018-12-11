@@ -1,0 +1,5 @@
+print(qm7['positions'][2, :6])
+
+plt.plot(*qm7['positions'][2, :6, :2].T, "o")
+
+qm7['charges'][2, :6]

@@ -1,0 +1,1 @@
+plt.matshow(all_atom_distances[50])

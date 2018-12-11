@@ -1,0 +1,4 @@
+coulomb_energies = np.zeros_like(all_atom_distances)
+coulomb_energies[non_zero_mask] = all_charge_products[non_zero_mask] / all_atom_distances[non_zero_mask]
+
+plt.matshow(coulomb_energies[50])

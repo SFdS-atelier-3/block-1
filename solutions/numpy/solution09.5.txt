@@ -1,0 +1,3 @@
+all_charge_products = qm7['charges'][:, :, np.newaxis] * qm7['charges'][:, np.newaxis]
+
+plt.matshow(all_charge_products[50])

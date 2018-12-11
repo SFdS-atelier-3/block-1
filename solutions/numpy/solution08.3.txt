@@ -1,0 +1,2 @@
+pairwise_distances = np.linalg.norm(distance_vectors, axis=-1)
+pairwise_distances, np.diag(pairwise_distances), pairwise_distances.T - pairwise_distances

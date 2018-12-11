@@ -1,0 +1,10 @@
+def compute_coulomb_matrices(positions, charges):
+    all_atom_distances = np.linalg.norm(positions[:, :, np.newaxis] -
+                                        positions[:, np.newaxis], axis=-1)
+    all_charge_products = charges[:, :, np.newaxis] * charges[:, np.newaxis]
+    non_zero_mask = (all_charge_products != 0) & (all_atom_distances > 0)
+    coulomb_matrices = np.zeros_like(all_atom_distances)
+    coulomb_matrices[non_zero_mask] = (all_charge_products[non_zero_mask] / 
+                                       all_atom_distances[non_zero_mask])
+    coulomb_matrices.reshape(coulomb_matrices.shape[0], -1)[:, ::coulomb_matrices.shape[1] + 1] = charges ** 2.4
+    return coulomb_matrices

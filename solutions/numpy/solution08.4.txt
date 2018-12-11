@@ -1,0 +1,4 @@
+N, n, p = 100, 10, 3
+all_points = np.random.randn(N, n, p)
+all_distances = np.linalg.norm(all_points[:, :, np.newaxis] - all_points[:, np.newaxis], axis=-1)
+all_points.shape, all_distances.shape

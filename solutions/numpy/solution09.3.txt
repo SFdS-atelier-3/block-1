@@ -1,0 +1,1 @@
+all_atom_distances = np.linalg.norm(qm7['positions'][:, :, np.newaxis] - qm7['positions'][:, np.newaxis], axis=-1)

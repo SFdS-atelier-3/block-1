@@ -1,0 +1,20 @@
+row_norms = np.linalg.norm(coulomb_matrices, axis=2)
+col_norms = np.linalg.norm(coulomb_matrices, axis=1)
+np.abs(row_norms - col_norms).max()
+
+col_order = np.argsort(col_norms, axis=1)[:, ::-1]
+row_order = np.argsort(row_norms, axis=1)[:, ::-1]  # they actually differ in one spot!
+
+sorted_coulomb_matrices = coulomb_matrices[np.arange(len(coulomb_matrices))[:, np.newaxis, np.newaxis],
+                                           col_order[:, :, np.newaxis],
+                                           col_order[:, np.newaxis, :]]
+
+plt.matshow(sorted_coulomb_matrices[1700])
+
+def sort_coulomb_matrices(coulomb_matrices):
+    row_norms = np.linalg.norm(coulomb_matrices, axis=2)
+    row_order = row_norms.argsort(axis=1)[:, ::-1]
+    sorted_coulomb_matrices = coulomb_matrices[np.arange(len(coulomb_matrices))[:, np.newaxism, np.newaxis],
+                                               row_order[:, :, np.newaxis],
+                                               row_order[:, np.newaxis]]
+    return sorted_coulomb_matrices

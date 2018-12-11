@@ -1,0 +1,3 @@
+non_zero_mask = (all_charge_products != 0) & (all_atom_distances > 0)
+
+plt.matshow(non_zero_mask[50])
