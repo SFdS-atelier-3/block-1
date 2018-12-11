@@ -1,0 +1,2 @@
+diagB = B.reshape(B.shape[0], -1)[:, ::B.shape[2] + 1]
+diagB

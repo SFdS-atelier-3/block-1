@@ -1,0 +1,2 @@
+d1600 = digits.images[:1600]
+d1600.shape

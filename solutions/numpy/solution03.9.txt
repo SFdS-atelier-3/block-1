@@ -1,0 +1,2 @@
+plt.figure(figsize=(20, 20))
+plt.imshow(digits_panel, cmap='gray')

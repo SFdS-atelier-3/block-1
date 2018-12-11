@@ -1,0 +1,5 @@
+plt.figure(figsize=(10, 10))
+for i, patch in enumerate(c4_patches):
+    plt.subplot(4, 5, i + 1)
+    plt.imshow(patch, cmap='gray')
+    plt.axis('off')

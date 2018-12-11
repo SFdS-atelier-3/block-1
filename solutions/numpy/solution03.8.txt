@@ -1,0 +1,1 @@
+digits_panel = d40x40_transpose.reshape(40 * 8, -1)

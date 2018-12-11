@@ -1,0 +1,1 @@
+d40x40_transpose = d40x40.transpose(0, 2, 1, 3)
