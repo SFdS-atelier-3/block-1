@@ -1,0 +1,7 @@
+def create_neural_network(layer_sizes=(1, 10, 10, 1)):
+    layers = []
+    for input_size, output_size in zip(layer_sizes[:-1], layer_sizes[1:]):
+        layers.append(torch.nn.Linear(input_size, output_size))
+        layers.append(torch.nn.ReLU())
+        #layers.append(torch.nn.Tanh())
+    return torch.nn.Sequential(*layers[:-1])

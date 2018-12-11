@@ -1,0 +1,14 @@
+net2 = create_neural_network((1, 10, 1))
+
+data2 = DataLoader(list(zip(x, y2)), batch_size=32, shuffle=True)
+
+all_losses2 = train_mse_adam(net2, data2, 100)
+
+prediction2 = net2(x).detach().cpu().numpy()
+
+plt.plot(x.numpy(), prediction2)
+plt.plot(x.numpy(), y2.numpy())
+
+plt.figure()
+plt.plot(np.concatenate(all_losses2))
+plt.yscale('log')
