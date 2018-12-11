@@ -10,3 +10,7 @@ Premier block de cours
 
 ## Liens colab:
 
+[Introduction to numpy on colab](https://colab.research.google.com/github/SFdS-atelier-3/block-1/blob/master/Intro%20to%20numpy%20arrays.ipynb)
+[Introduction to pytorch on colab](https://colab.research.google.com/github/SFdS-atelier-3/block-1/blob/master/Intro%20to%20pytorch.ipynb)
+[Introduction to Scikit-learn on colab](https://colab.research.google.com/github/SFdS-atelier-3/block-1/blob/master/Intro%20to%20Scikit-Learn.ipynb)
+
